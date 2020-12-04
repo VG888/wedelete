@@ -1,9 +1,1 @@
-<!DOCTYPE html>
-<html>
-  <meta charset="UTF-8"> <lang="US"> 
-<head>
-  <h1><style=color:blue>Learning Web Development</h1>
-</head>
-<body>
-</body>
-</html>
+
