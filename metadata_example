@@ -1,0 +1,31 @@
+All meta data description go inside of head section
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+The HTML <base> Element
+The <base> element specifies the base URL and/or target for all relative URLs in a page.
+
+The <base> tag must have either an href or a target attribute present, or both.
+
+There can only be one single <base> element in a document!
+
+<head>
+<base href="https://www.w3schools.com/" target="_blank">
+</head>
+
+<body>
+<img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+<a href="tags/tag_base.asp">HTML base Tag</a>
+</body>
+
+
+
