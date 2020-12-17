@@ -6,7 +6,75 @@
 name="viewport" content="width=device-width, intial-scale=1.0">
 
 <style>
-<!--Grid Definition-->
+  .grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color: darkblue;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: grey;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+.item2 {
+  grid-column: 1 / 2;
+  grid-row: 2 / span 3;
+}
+.item3 {
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 3;
+}
+.item4 {
+  grid-column: 3 / span 4;
+  grid-row: 2 / span 3;
+}
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 4;
+}
+.item6 {
+  grid-column: 1 / span 3;
+  grid-row: 4 / span 5;
+}
+</style>
+  
+</head>
+  
+<body>
+
+<h1>A Five Items Grid Layout:</h1>
+
+<div class="grid-container">
+  <div class="grid-item item1">1</div>
+  <div class="grid-item item2">2</div>
+  <div class="grid-item item3">3</div>  
+  <div class="grid-item item4">4</div>
+  <div class="grid-item item5">5</div>
+  <div class="grid-item item6">5</div>
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--Grid Definition
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
 .item3 { grid-area: main; }
@@ -42,13 +110,11 @@ name="viewport" content="width=device-width, intial-scale=1.0">
   <div>4</div>
   <div>5</div>
 </div>
+-->
 
-</body>
-
-</html>
-
-
-
+  
+  
+  
 <!--Menu
 ul {
   list-style-type: none;
