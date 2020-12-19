@@ -13,13 +13,6 @@ name="viewport" content="width=device-width, intial-scale=1.0">
   grid-gap: 10px;
 }
 
-.grid-container2 {
-  display: grid;
-  grid-template-columns: 605px 605px;
-  grid-template-row: 350px;
-  grid-gap: 10px;
-}
-
 .item1 {
   grid-column: 1 / span 3;
   grid-row: 1;
@@ -79,15 +72,38 @@ name="viewport" content="width=device-width, intial-scale=1.0">
   border: 5px double white;
 }
 
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 605px 605px;
+  grid-template-row: 350px;
+  grid-gap: 10px;
+}
+  
 .item7 {
-  grid-column: 1 / span 2;
+  grid-column: 1;
   grid-row: 2;
   background-color: white;
   color: black;
   text-align: left;
   margin: 10px;
   border: 5px double black;
-
+}  
+ 
+.container {
+  border-radius: 5px;
+  background-color: whitesmoke;
+  padding: 10px;
+  
+.item8 {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: white;
+  color: black;
+  text-align: left;
+  margin: 10px;
+  border: 5px double black;
+}
+  
 ul {
   list-style-type: none;
   margin: 0;
@@ -178,6 +194,29 @@ li a:hover {
                 EU
                 </address>
            </div>
+           <div> class="grid-item item8">
+             <h2>Get in Touch</h2>
+             <div class="container">
+                <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+               <select id="country" name="country">
+                <option value="europe">Europe</option>
+                <option value="asia">Canada</option>
+                <option value="america">America</option>
+                <option value="australia">Australia</option>
+                <option value="africa">Africa</option>
+                <option value="new-zealand">New Zealand</option>
+               </select>
+                <label for="subject">Subject</label>
+               <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+               <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
       </div>
   </div>
 </div>
