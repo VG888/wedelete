@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8"
+name="viewport" content="width=device-width, intial-scale=1.0">
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 430px 380px 415px;
+  grid-template-row: 290px 400px;
+  grid-gap: 10px;
+}
+
+.item1 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  background-color: darkred;
+  color: white;
+  font-family: courier;
+  font-size: 80px;
+  text-align: center;
+  padding: 0px;
+}
+.item2 {
+  grid-column: 1;
+  grid-row:2;
+  background-color: orange;
+  color: gray;
+  text-align: left;
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 5px solid gray;
+}
+.item3 {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: gray;
+  color: green;
+  height: 450px;
+  margin: 10px;
+  padding: 20px;
+  border: 5px solid green;
+}
+.item4 {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: powderblue;
+  color: yellow;
+  height: 370px;
+  margin: 10px;
+  padding: 20px;
+  border: 5px solid yellow;
+}
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  background-color: white;
+  color: black;
+  text-align: center;
+  height: 370px;
+  margin: 10px;
+  padding: 50px;
+  border: 5px double black;
+}
+.item6 {
+  grid-column: 1 / span 3;
+  grid-row: 4;
+  background-color: black;
+  color: white;
+  text-align: left;
+  margin: 10px;
+  border: 5px double white;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 280px 300px 590px;
+  grid-template-row: 300px;
+  grid-gap: 20px;
+}
+  
+.item7 {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: white;
+  color: black;
+  text-align: left;
+  margin: 10px;
+  padding: 25px;
+  border: 5px double black;
+}  
+  
+.item8 {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: white;
+  color: black;
+  text-align: left;
+  margin: 10px;
+  padding: 25px;
+  border: 5px double black;
+}
+  
+.item9 {
+  grid-column: 3;
+  grid-row: 1;
+  background-color: white;
+  color: black;
+  text-align: left;
+  margin: 10px;
+  padding: 25px;
+  border: 5px double black;
+}
+  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:darkred;
+}
+
+li {
+  float:right;
+  text-align: right;
+  font-family:courier;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:gray;
+}
+
+</style>
+  
+</head>
+  
+<body>
+
+<div class="grid-container">
+  <div class="grid-item item1">
+      <header style="font-size:80">MY FIRST WEBSITE</header>
+      <ul style="font-size:22px">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="how.html">How</a></li>
+        <li><a href="home.html">Home</a></li>
+      </ul>     
+  </div>
+  <div class="grid-item item2">
+      <h1>How it all started</h1>
+      <p>By sitting and browsing on net while sipping coffee.</p>
+  </div>
+  <div class="grid-item item3">
+      <h1>Searching</h1>
+      <p>Browsing, thinking, looking for something interesting where I could start. Some change in my career.</p>
+  </div>  
+  <div class="grid-item item4">
+      <h1>Courses</h1>
+      <pre style="font-size:17px">
+   How to code? 
+   That came to me as an answer. 
+         
+   What do I search on net? 
+   Websites.
+
+   There was my answer again.
+
+   How to get the knowledge? 
+   By learning. 
+
+   What do I need for that? 
+   Course.
+      </pre>
+  </div>
+  <div class="grid-item item5">
+      <h2>Links To Courses Site I Found</h2>
+      <p><a href="https://alison.com/">IT courses</a></p>
+      <p><a href="https://www.coursera.org/">Code</a></p>
+      <p><a href="https://www.edx.org/">Python Choice</a></p>
+      <p><a href="https://www.theodinproject.com/">WebDev</a></p>
+      <p><a href="https://www.w3schools.com/">Final</a></p>
+      <br>
+      <h2>One that I ended up creating this</h2>
+      <p>Last one was place where I could get into it right away.</p>
+  </div>
+  <div class="grid-item item6">
+      <div class="grid-container2">
+           <div class="grid-item item7">
+                <h2>Contact details</h2>
+                <address>
+                Written by <a href="mailto:webmaster@example.com">Izzy Dizzy</a>.<br> 
+                Visit us at: Site.com<br>
+                Box 368, Neverland<br>
+                EU
+                </address>
+           </div>
+           <div class="grid-item item8">
+             <h2>Get in Touch</h2>
+                <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+               <select id="country" name="country">
+                <option value="europe">Europe</option>
+                <option value="asia">Canada</option>
+                <option value="america">America</option>
+                <option value="australia">Australia</option>
+                <option value="africa">Africa</option>
+                <option value="new-zealand">New Zealand</option>
+               </select>
+                <label for="subject">Subject</label>
+               <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+               <input type="submit" value="Submit">
+              </form>
+          </div>
+          <div class="grid-item item9">
+               <h2>Something to fit in case of need</h2>
+               <p>1.Testimonial</p>
+               <p>2.Counter for Projects, Meetings, Happy Clients</p>
+               <p>3.Other Comments</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+</body>
+
+</html>
+
